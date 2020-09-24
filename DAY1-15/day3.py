@@ -45,16 +45,44 @@
 # 要求：如果输入的成绩在90分以上（含90分）输出A；80分-90分（不含90分）输出B；
 # 70分-80分（不含80分）输出C；60分-70分（不含70分）输出D；60分以下输出E。
 
-grade=float(input("请输入成绩："))
+# grade=float(input("请输入成绩："))
 
-if grade>=90:
-    print("A")
-elif 80<=grade<90:
-    print("B")
-elif 70<=grade<80:
-    print("C")
-elif 60<=grade<70:
-    print("D")
+# # if grade>=90:
+# #     print("A")
+# # elif 80<=grade<90:
+# #     print("B")
+# # elif 70<=grade<80:
+# #     print("C")
+# # elif 60<=grade<70:
+# #     print("D")
+# # else:
+# #     print("E")
+
+
+# if grade>=90:
+#     y="A"
+# elif 80<=grade<90:
+#     y="B"
+# elif 70<=grade<80:
+#     y="C"
+# elif 60<=grade<70:
+#     y="D"
+# elif grade<60:
+#     y="E"
+# else:
+#     y="请输入正确的分数"
+# print(y)
+
+# 练习3：输入三条边长，如果能构成三角形就计算周长和面积。
+
+x=float(input("请输入第一条边："))
+y=float(input("请输入第二条边："))
+z=float(input("请输入第三条边："))
+
+if x+y>z and x+z>y and y+z>x:
+    print('周长：%0.2f'%(x+y+z))
+    p=(x+y+z)/2
+    s=(p*(p-x)*(p-y)*(p-z))**0.5
+    print('面积：%0.2f'%(s))
 else:
-    print("E")
-  
+    print("不是三角形")
