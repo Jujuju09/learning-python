@@ -122,10 +122,17 @@ row=int(input("请输入行数："))
 #     print()
 
 
+# for i in range(row):
+#     for _ in range(row-i-1):
+#         print(" ",end="")
+#     for _ in range(i*2+1):
+#         print("*",end="")
+#     print()
+
 for i in range(row):
-    for i in range(row-i-1):
+    for _ in range(row-i-1):
         print(" ",end="")
-    for i in range(row*2-1):
+    for _ in range(2*i+1):
         print("*",end="")
     print()
 
