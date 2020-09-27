@@ -98,11 +98,46 @@
 #  *******
 # *********
 
-row = int(input('请输入行数: '))
+
+
+# row =int(input("请输入行数："))
+# for i in range(row):
+#     for i in range(i+1):
+#         print("*",end="")
+#     print()
+
+
+row=int(input("请输入行数："))
+# for i in range(row):
+#     for i in range(i+1):
+#         print(" ","*",end="")
+#     print()
+
+# for i in range(row):
+#     for j in range(row):
+#         if j < row - i - 1:
+#             print(' ', end='')
+#         else:
+#             print('*', end='')
+#     print()
+
+
 for i in range(row):
-    for _ in range(i + 1):
-        print('*', end='')
+    for i in range(row-i-1):
+        print(" ",end="")
+    for i in range(row*2-1):
+        print("*",end="")
     print()
+
+# fe=0
+# fe1=1
+# for i in range(0,row):
+#     fe += fe1
+#     fe1=fe-fe1
+#     print(fe)
+
+
+    
 
 # 用while循环实现1~100求和
 # sum=0
